@@ -1,4 +1,3 @@
-# Virtual Scrolling (Infinite Scrolling)
 # Project Overview
 
 This project demonstrates a dynamic and responsive card layout using Angular, Angular Material, dynamic data loading, responsive design, custom styling,  and Angular CDK's virtual scrolling. The card layout adapts to various screen sizes and dynamically loads data as the user scrolls.
