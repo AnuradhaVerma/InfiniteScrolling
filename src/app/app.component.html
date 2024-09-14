@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Virtual Scrolling</title>
+  </head>
+  <body>
+    
+    <cdk-virtual-scroll-viewport itemSize="" class="viewport">
+      <div class="grid-container">
+        <mat-card *cdkVirtualFor="let record of records" class="record-card">
+          <mat-card-header>
+            <div mat-card-avatar class="album-cover"></div>
+            <mat-card-title>{{ record.album }}</mat-card-title>
+            <mat-card-subtitle>{{ record.singer }}</mat-card-subtitle>
+          </mat-card-header>
+          <img mat-card-image [src]="record.image" alt="Album cover" />
+          <mat-card-content>
+            <p><strong>Track:</strong> {{ record.track }}</p>
+            <p><strong>Lyricist:</strong> {{ record.lyricist }}</p>
+          </mat-card-content>
+        </mat-card>
+      </div>
+    </cdk-virtual-scroll-viewport>
+  </body>
+</html>
